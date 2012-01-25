@@ -11,7 +11,7 @@ endif
 
 "keywords
 syn keyword royStatement match case bind
-syn keyword royStatement if else
+syn keyword royStatement if else then
 syn keyword royStatement case
 syn keyword royStatement macro do return
 syn keyword royStatement with
