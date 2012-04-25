@@ -45,8 +45,6 @@ syn match   roySymbol  "\%(\%(let\s\)\s*\)\@<=\%([a-zA-Z0-9$_]\)*" contained
 syn match   royLiteralTok "[<>!=/\%\+\*\-&←λ→\\⇒]"
 syn match   royNumber "[^a-zA-Z\$_]\d\+"
 
-"var INDENT = "(?:\n[^\n\S]*)"
-
 "Braces,Parens
 syn match   roySurround "[{}]"
 syn match   roySurround  "[()]"
