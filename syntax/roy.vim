@@ -54,7 +54,8 @@ syn match  royComment "//.*$" display contains=royTodo,@Spell
 syn keyword royTodo   FIXME NOTE NOTES TODO XXX contained
 
 "String
-syn region royString start=+"+ skip=+\\\\\|\\"\|\\$+ excludenl end=+"+ end=+$+ keepend
+syn region  royStringD	       start=+"+  skip=+\\\\\|\\"+  end=+"\|$+
+syn region  royStringS	       start=+'+  skip=+\\\\\|\\'+  end=+'\|$+
 
 if version >= 508 || !exists("did_roy_syn_inits")
   if version <= 508
@@ -65,7 +66,8 @@ if version >= 508 || !exists("did_roy_syn_inits")
   endif
   
   HiLink royComment   Comment
-  HiLink royString    String
+  HiLink royStringD    String
+  HiLink royStringS    String
   HiLink royStatement Statement
   HiLink roySymbol    Function
   HiLink roySurround  Nothing
