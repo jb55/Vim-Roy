@@ -22,6 +22,7 @@ syn keyword royStatement return
 syn keyword royStatement then
 syn keyword royStatement type
 syn keyword royStatement typeclass
+syn keyword royStatement instance
 syn keyword royStatement where
 syn keyword royStatement with
 
