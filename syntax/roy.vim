@@ -45,6 +45,7 @@ syn keyword roySymbol let nextgroup=roySymbol skipwhite
 syn match   roySymbol  "\%(\%(let\s\)\s*\)\@<=\%([a-zA-Z0-9$_]\)*" contained
 syn match   royLiteralTok "[<>!=/\%\+\*\-&←λ→\\⇒]"
 syn match   royNumber "[^a-zA-Z\$_]\d\+"
+syn match   royTypeVariable "#[a-zA-Z]\+"
 
 "Braces,Parens
 syn match   roySurround "[{}]"
@@ -78,7 +79,8 @@ if version >= 508 || !exists("did_roy_syn_inits")
   HiLink royImport    Include
   HiLink royMacro     Macro
   HiLink royLiteralTok Operator
-  HiLink royNumber    Number
+  HiLink royNumber       Number
+  HiLink royTypeVariable Type
 
   delcommand HiLink
 endif
