@@ -15,7 +15,6 @@ setlocal comments=://
 setlocal commentstring=//%s
 setlocal define="^\s*macro\>"
 
-" Uncomment the following two lines to force julia source-code style
 set shiftwidth=2
 set expandtab
 
